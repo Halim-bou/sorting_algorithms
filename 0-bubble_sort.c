@@ -1,4 +1,5 @@
 #include "sort.h"
+#include <stddef.h>
 
 /**
  * bubble_sort - bubble sort algorithm
@@ -16,7 +17,7 @@ void bubble_sort(int *array, size_t size)
 	while (swap == 0)
 	{
 		swap = 1;
-		if (size < 2)
+		if (size < 2 || array == NULL)
 			break;
 		for (i = 0; i < size - 1; i++)
 		{
