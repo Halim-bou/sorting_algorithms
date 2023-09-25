@@ -21,4 +21,5 @@ void print_array(const int *array, size_t size);
 
 /*Function for sorting algorithms*/
 void bubble_sort(int *array, size_t size);
+void insertion_sort_list(listint_t **list);
 #endif
